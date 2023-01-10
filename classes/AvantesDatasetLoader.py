@@ -10,7 +10,7 @@ class AvantesDatasetLoader(DatasetLoader):
     FIELD_REFERENCE = 3
     FIELD_REFLECTANCE = 4
 
-    def __init__(self, directory: str, material_map: dict, measurement_field: int = FIELD_SAMPLE):
+    def __init__(self, directory: str, material_map: dict, measurement_field: int = FIELD_REFLECTANCE):
         self.directory = directory if directory.endswith('/') else directory + '/'
         self.material_map = material_map
         self.measurement_field = measurement_field
